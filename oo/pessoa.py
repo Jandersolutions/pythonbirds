@@ -1,4 +1,5 @@
 class Pessoa:
+    olhos = 2 # Atributo default ou atributo de classe caso o valor seja o mesmo para todos os objetos
     def __init__(self, *filhos, nome=None, idade=35):
         self.nome = nome
         self.idade = idade
@@ -25,5 +26,6 @@ if __name__ == '__main__':
     print(marcelo.__dict__)
     print(julio.__dict__)
     del marcelo.sobrenome # remove atributos da classe
+    print(julio.olhos)
 
 
