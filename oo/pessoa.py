@@ -20,5 +20,10 @@ if __name__ == '__main__':
     print(marcelo.filhos)
     for filho in marcelo.filhos:
         print(filho.nome)
+    marcelo.sobrenome = 'Augusto' # Atributo em tempo de execução
+    print(marcelo.sobrenome)
+    print(marcelo.__dict__)
+    print(julio.__dict__)
+    del marcelo.sobrenome # remove atributos da classe
 
 
